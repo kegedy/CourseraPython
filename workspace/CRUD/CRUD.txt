@@ -1,0 +1,25 @@
+#CREATE READ UPDATE DELETE (CRUD)
+
+CREATE TABLE Users(
+     name VARCHAR(128),
+     email VARCHAR(128)
+)
+
+INSERT INTO Users (name, email) VALUES ('Kristin', 'kf@umich.edu')
+#adds a row into the table "Users"
+
+DELETE FROM Users WHERE email='ted@umich.edu'
+#deletes a row in a table based on the criteria
+
+UPDATE Users SET name="Charles" WHERE email='csev@umich.edu'
+#allows the updating of a field with a WHERE clause
+
+SELECT * FROM Users
+#retrieves all the records from the table
+
+SELECT * FROM Users WHERE email='csev@umich.edu'
+#retrieves a subset of the records defined by the WHERE clause
+
+SELECT * FROM Users ORDER BY email
+#you append ORDER BY to SELECT statements; sorts the results in ascending or descending order
+
